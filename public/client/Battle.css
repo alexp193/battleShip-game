@@ -1,0 +1,59 @@
+
+@import "http://fonts.googleapis.com/css?family=Arvo";
+
+#CanvasBattle {
+
+    width: 100%;
+}
+body{
+      
+      margin: 0 auto;
+      padding: 0 auto;
+      
+}
+div#first {
+    padding: 0 45px 20px;
+    border: 1px dotted #ccc;
+}
+h1{
+    text-align: center;
+}
+div#main{
+    background-image: url("https://i.ytimg.com/vi/v4NQ3GwOF5c/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    background-color: #ccc;
+    font-family: 'Arvo',serif
+}
+
+
+select{
+    background-image:url(../images/arrow.png);
+background-repeat:no-repeat;
+background-position:300px;
+font-family:Cursive;
+line-height:1;
+border-radius:5px;
+background-color:black;
+color: wheat;
+font-size:20px;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none
+}
+input{
+  
+    border-radius: 5px;
+    width: 175px;
+}
+.userIn{
+        height: 22px;
+        background-color: lightblue;
+}
+.submit {
+    background-color: #1067a2;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 8px;
+}

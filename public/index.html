@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Battle-Ship</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/client/Battle.css">
+</head>
+<div id="main" class="image">
+    <div id="first">
+        <h1>Battle Ship</h1>
+        <form id="nick">
+            Nick-Name: <input class="userIn" type="TEXT" id="user" size="40" onkeyup="stopType()"> <br>
+            <input class="submit" type="button" id="submit" value="Login" disabled>
+        </form>
+
+        <div id="load_dialog" class="dialog">
+            <div class="inner">
+                UsersOnline: <select></select>
+            </div>
+            <input class="submit" type="button" id="SendR" value="StartGame">
+        </div>
+    </div>
+</div>
+
+<body>
+    <div id="canvas">
+    </div>
+</body>
+<script type="text/javascript">
+    var i = document.getElementById("user");
+
+    function stopType() {
+        if (i.value.length > 0) {
+            document.getElementById("submit").disabled = false;
+        } else {
+            document.getElementById("submit").disabled = true;
+        }
+    }
+</script>
+<script src="/client/gameLoad.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client/drawable.js"></script>
+<script src="/client/clientComunication.js"></script>
+<script src="/client/userConnection.js"></script>
+
+
+
+</html>
